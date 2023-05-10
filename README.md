@@ -1,37 +1,49 @@
-# Template for extending ASReview with new model
+# ASReview multilingual feature extractors
 
-ASReview has support for extensions, which enable you to seamlessly integrate
-your own programs with the ASReview framework. These extensions can extend the
-software with new classifiers, query strategies, balance strategies, and feature
-extraction techniques. This template can be used to write such an extension
-(add a new SKLearn naive Bayes classifier with default settings in this case).
+This extension to ASReview implements several multilingual feature extractor algorithms, allowing for the analysis of records in multiple languages.
+The following sentence transformers are currently implemented:
 
-See the section [Extensions](https://asreview.readthedocs.io/en/latest/extensions_dev.html) on ReadTheDocs for more information on writing extensions.
+- sentence-transformers/distiluse-base-multilingual-cased-v2 [Source](https://huggingface.co/sentence-transformers/distiluse-base-multilingual-cased-v2)
+
+- sentence-transformers/paraphrase-multilingual-mpnet-base-v2 [Source](https://huggingface.co/sentence-transformers/paraphrase-multilingual-mpnet-base-v2)
+
+- sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 [Source](https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2)
+
+- sentence-transformers/stsb-xlm-r-multilingual [Source](sentence-transformers/stsb-xlm-r-multilingual)
+
+and more are in the pipeline.
+
+
 
 ## Getting started
 
-Click the `Use this template` button and add/modify the algorithms. Install your new classifier with
+This model depends on Sentence-Transformers. Install it with:
 
 ```bash
-pip install .
+pip install sentence-transformers
 ```
 
-or
+Install the multilingual feature extractors with:
+
 
 ```bash
-pip install git+https://github.com/{USER_NAME}/{REPO_NAME}.git
+pip install git+https://github.com/Robdboer/multilingual-sentence-transformers.git
 ```
-
-and replace `{USER_NAME}` and `{REPO_NAME}` by your own details.
 
 ## Usage
 
-The new classifier `nb_example` is defined in
-[`asreviewcontrib/models/nb_default_param.py`](asreviewcontrib/models/nb_default_param.py) and can be used in a simulation.
+The new feature extractors are defined under 'multilingual' in
+[`asreviewcontrib/models/multilingual.py`](asreviewcontrib/models/multilingual.py) and can be used in a simulation.
 
 ```bash
-asreview simulate example_data_file.csv -m nb_example
+asreview simulate benchmark:van_de_Schoot_2017 -e multilingual:model -m svm
 ```
+
+Choose a model out of the following list:
+...
+
+> Please note that, as with all sentence transformers, this model produces negative vector values. Consequently, it is not compatible with Naive Bayes classifiers, which require non-negative feature values.
+
 
 ## License
 
