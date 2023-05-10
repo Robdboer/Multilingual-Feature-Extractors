@@ -32,8 +32,8 @@ pip install git+https://github.com/Robdboer/multilingual-sentence-transformers.g
 
 ## Usage
 
-The new feature extractors are defined under 'multilingual' in
-[`asreviewcontrib/models/multilingual.py`](asreviewcontrib/models/multilingual.py) and can be used in a simulation.
+The feature extractors are defined in
+[`asreviewcontrib/models`](asreviewcontrib/models) and can be used in a simulation.
 
 ```bash
 asreview simulate benchmark:van_de_Schoot_2017 -e [Extractor_Model] -m svm
