@@ -29,7 +29,8 @@ setup(
             # define feature_extraction algorithms
             "minilm = asreviewcontrib.models.paraphrase_multilingual_MiniLM_L12_v2.paraphrase_multilingual_MiniLM_L12_v2:paraphrasemultilingualMiniLML12v2",
             "distiluse = asreviewcontrib.models.distiluse_base_multilingual_cased_v2.distiluse_base_multilingual_cased_v2:distilusebasemultilingualcasedv2",
-            "mpnet = asreviewcontrib.models.stsb_xlm_r_multilingual.stsb_xlm_r_multilingual:stsbxlmrmultilingual",
+            "mpnet = asreviewcontrib.models.paraphrase_multilingual_mpnet_base_v2.paraphrase_multilingual_mpnet_base_v2:paraphrasemultilingualmpnetbasev2",
+            "stsb = asreviewcontrib.models.stsb_xlm_r_multilingual.stsb_xlm_r_multilingual:stsbxlmrmultilingual",
         ],
         'asreview.models.balance': [
             # define balance strategy algorithms
