@@ -3,7 +3,7 @@
 This extension to ASReview implements a multilingual feature extractor algorithm, allowing for the analysis of records in multiple languages.
 The following feature extractor is implemented:
 
-sentence-transformers/stsb-xlm-r-multilingual [Source](sentence-transformers/stsb-xlm-r-multilingual)
+- sentence-transformers/stsb-xlm-r-multilingual [Source](sentence-transformers/stsb-xlm-r-multilingual)
 
 ## Getting started
 
