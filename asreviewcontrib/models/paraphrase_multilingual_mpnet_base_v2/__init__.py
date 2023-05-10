@@ -1,0 +1,1 @@
+from asreviewcontrib.models.paraphrase_multilingual_mpnet_base_v2.paraphrase_multilingual_mpnet_base_v2 import paraphrasemultilingualmpnetbasev2

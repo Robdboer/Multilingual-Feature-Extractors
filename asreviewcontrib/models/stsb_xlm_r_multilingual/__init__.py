@@ -1,0 +1,1 @@
+from asreviewcontrib.models.stsb_xlm_r_multilingual.stsb_xlm_r_multilingual import stsbxlmrmultilingual

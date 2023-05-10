@@ -39,17 +39,11 @@ The feature extractors are defined in
 asreview simulate benchmark:van_de_Schoot_2017 -e [Extractor_Model] -m svm
 ```
 
-Choose an Extractor Model out of the following list:
+Choose an Extractor Model out of the following:
 
 - minilm (sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2)
 
-- distiluse (distiluse-base-multilingual-cased-v2)
-
-- mpnet (paraphrase-multilingual-mpnet-base-v2)
-
-- stsb (stsb-xlm-r-multilingual)
-
-> Please note that, as with all sentence transformers, these models produce negative vector values. Consequently, they are not compatible with Naive Bayes classifiers, which require non-negative feature values.
+> Please note that, as with all sentence transformers, this model produces negative vector values. Consequently, it is not compatible with Naive Bayes classifiers, which require non-negative feature values.
 
 
 ## License
