@@ -2,12 +2,12 @@ from setuptools import setup
 from setuptools import find_namespace_packages
 
 setup(
-    name='asreview-template-model-extension',
+    name='asreview-multilingual-feature-extractors-extension',
     version='1.0',
-    description='Example classifier extension',
-    url='https://github.com/asreview/asreview',
-    author='ASReview team',
-    author_email='asreview@uu.nl',
+    description='Multilingual feature extractors extension',
+    url='https://github.com/robdboer/multilingual-sentence-transformers',
+    author='Rob den Boer',
+    author_email='robbiedboer99@gmail.com',
     classifiers=[
         'Development Status :: 4 - Beta',
         'License :: OSI Approved :: MIT License',
@@ -23,10 +23,11 @@ setup(
     ],
     entry_points={
         'asreview.models.classifiers': [
-            'nb_example = asreviewcontrib.models:NaiveBayesDefaultParamsModel',
+            # define classifier algorithms
         ],
         'asreview.models.feature_extraction': [
             # define feature_extraction algorithms
+            "multilingual = asreviewcontrib.models.paraphrase_multilingual_MiniLM_L12_v2:paraphrasemultilingualMiniLML12v2",
         ],
         'asreview.models.balance': [
             # define balance strategy algorithms
@@ -37,6 +38,6 @@ setup(
     },
     project_urls={
         'Bug Reports': 'https://github.com/asreview/asreview/issues',
-        'Source': 'https://github.com/asreview/asreview/',
+        'Source': 'https://github.com/robdboer/multilingual-sentence-transformers/',
     },
 )

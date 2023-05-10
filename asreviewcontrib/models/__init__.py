@@ -1,1 +1,1 @@
-from asreviewcontrib.models.nb_default_param import NaiveBayesDefaultParamsModel
+from asreviewcontrib.models.paraphrase_multilingual_MiniLM_L12_v2 import paraphrasemultilingualMiniLML12v2
