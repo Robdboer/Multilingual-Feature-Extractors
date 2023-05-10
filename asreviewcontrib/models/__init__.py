@@ -1,1 +1,3 @@
 from asreviewcontrib.models.paraphrase_multilingual_MiniLM_L12_v2 import paraphrasemultilingualMiniLML12v2
+from asreviewcontrib.models.distiluse_base_multilingual_cased_v2 import distilusebasemultilingualcasedv2
+
