@@ -45,7 +45,7 @@ Choose an Extractor Model out of the following list:
 
 - distiluse (distiluse-base-multilingual-cased-v2)
 
-> Please note that, as with all sentence transformers, this model produces negative vector values. Consequently, it is not compatible with Naive Bayes classifiers, which require non-negative feature values.
+> Please note that, as with all sentence transformers, these models produce negative vector values. Consequently, they are not compatible with Naive Bayes classifiers, which require non-negative feature values.
 
 
 ## License
