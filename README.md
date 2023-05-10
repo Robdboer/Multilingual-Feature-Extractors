@@ -36,11 +36,12 @@ The new feature extractors are defined under 'multilingual' in
 [`asreviewcontrib/models/multilingual.py`](asreviewcontrib/models/multilingual.py) and can be used in a simulation.
 
 ```bash
-asreview simulate benchmark:van_de_Schoot_2017 -e multilingual:model -m svm
+asreview simulate benchmark:van_de_Schoot_2017 -e [Extractor_Model] -m svm
 ```
 
-Choose a model out of the following list:
-...
+Choose an Extractor Model out of the following:
+
+- minilm (sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2)
 
 > Please note that, as with all sentence transformers, this model produces negative vector values. Consequently, it is not compatible with Naive Bayes classifiers, which require non-negative feature values.
 
