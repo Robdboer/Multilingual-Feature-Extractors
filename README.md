@@ -1,7 +1,7 @@
 # ASReview multilingual feature extractors
 
 This extension to ASReview implements several multilingual feature extractor algorithms, allowing for the analysis of records in multiple languages.
-The following sentence transformers are currently implemented:
+The following feature extractors are currently implemented:
 
 - sentence-transformers/distiluse-base-multilingual-cased-v2 [Source](https://huggingface.co/sentence-transformers/distiluse-base-multilingual-cased-v2)
 
@@ -27,7 +27,7 @@ Install the multilingual feature extractors with:
 
 
 ```bash
-pip install git+https://github.com/Robdboer/multilingual-sentence-transformers.git
+pip install git+https://github.com/Robdboer/multilingual-feature-extractors.git
 ```
 
 ## Usage
