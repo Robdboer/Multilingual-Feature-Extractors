@@ -9,7 +9,9 @@ The following feature extractors are currently implemented:
 
 - sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 [Source](https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2)
 
-- sentence-transformers/stsb-xlm-r-multilingual [Source](sentence-transformers/stsb-xlm-r-multilingual)
+- sentence-transformers/stsb-xlm-r-multilingual [Source](https://huggingface.co/sentence-transformers/stsb-xlm-r-multilingual)
+
+- sentence-transformers/labse [Source](https://huggingface.co/sentence-transformers/labse)
 
 and more are in the pipeline.
 
@@ -48,6 +50,8 @@ Choose an Extractor Model out of the following list:
 - mpnet (paraphrase-multilingual-mpnet-base-v2)
 
 - stsb (stsb-xlm-r-multilingual)
+
+- labse (LaBse)
 
 > Please note that, as with all sentence transformers, these models produce negative vector values. Consequently, they are not compatible with Naive Bayes classifiers, which require non-negative feature values.
 
