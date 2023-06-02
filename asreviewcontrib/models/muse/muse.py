@@ -28,10 +28,10 @@ class muse(BaseFeatureExtraction):
         numpy.ndarray: A 2D array containing the encoded text embeddings.
         """
 
-	embed = hub.load("https://tfhub.dev/google/universal-sentence-encoder-multilingual/3")
+        embed = hub.load("https://tfhub.dev/google/universal-sentence-encoder-multilingual/3")
 
-	embeddings = []
+        embeddings = []
         for text in texts:
-        	embeddings.append(embed(text))
+            embeddings.append(embed(text))
 
         return embeddings
