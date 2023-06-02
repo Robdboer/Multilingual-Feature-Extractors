@@ -1,7 +1,6 @@
-import tensorflow as tf
 import tensorflow_hub as hub
 import numpy as np
-import tf_sentencepiece
+import tensorflow_text
 from asreview.models.feature_extraction.base import BaseFeatureExtraction
 
 
@@ -29,23 +28,10 @@ class muse(BaseFeatureExtraction):
         numpy.ndarray: A 2D array containing the encoded text embeddings.
         """
 
-        model_url = "https://tfhub.dev/google/universal-sentence-encoder-multilingual/1"
+	embed = hub.load("https://tfhub.dev/google/universal-sentence-encoder-multilingual/3")
 
-        # Graph set up.
-        g = tf.Graph()
-        with g.as_default():
-          text_input = tf.placeholder(dtype=tf.string, shape=[None])
-          embed = hub.Module(model_url)
-          embedded_text = embed(text_input)
-          init_op = tf.group([tf.global_variables_initializer(), tf.tables_initializer()])
-        g.finalize()
-
-        # Initialize session.
-        session = tf.Session(graph=g)
-        session.run(init_op)
-        # Compute embeddings.
-        embeddings = []
+	embeddings = []
         for text in texts:
-        	embeddings.append(session.run(embedded_text, feed_dict={text_input: text}))
+        	embeddings.append(embed(text))
 
         return embeddings
