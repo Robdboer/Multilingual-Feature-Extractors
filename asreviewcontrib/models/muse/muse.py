@@ -36,7 +36,7 @@ class muse(BaseFeatureExtraction):
         embeddings = []
         count = 1
         for text in texts:
-            print(count/num_texts, '%', end='\r')
+            print((count/num_texts)*100, '%', end='\r')
             embeddings.append(embed(text))
             count += 1
 
