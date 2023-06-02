@@ -32,6 +32,7 @@ setup(
             "mpnet = asreviewcontrib.models.paraphrase_multilingual_mpnet_base_v2.paraphrase_multilingual_mpnet_base_v2:paraphrasemultilingualmpnetbasev2",
             "stsb = asreviewcontrib.models.stsb_xlm_r_multilingual.stsb_xlm_r_multilingual:stsbxlmrmultilingual",
             "labse = asreviewcontrib.models.labse.labse:labse",
+            "muse = asreviewcontrib.models.muse.muse:muse",
         ],
         'asreview.models.balance': [
             # define balance strategy algorithms
