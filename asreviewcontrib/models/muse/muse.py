@@ -30,8 +30,14 @@ class muse(BaseFeatureExtraction):
 
         embed = hub.load("https://tfhub.dev/google/universal-sentence-encoder-multilingual/3")
 
-        embeddings = []
-        for text in texts:
-            embeddings.append(embed(text))
+        num_texts = len(texts)
+        print('Setting up multilingual model with MUSE... This could take a while')
 
-        return embeddings
+        embeddings = []
+        count = 1
+        for text in texts:
+            print(count/num_texts, '%', end='\r')
+            embeddings.append(embed(text))
+            count += 1
+
+        return np.concatenate(embeddings)
