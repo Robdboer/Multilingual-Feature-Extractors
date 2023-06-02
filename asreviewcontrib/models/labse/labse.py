@@ -5,7 +5,7 @@ from asreview.models.feature_extraction.base import BaseFeatureExtraction
 class labse(BaseFeatureExtraction):
     """
     Multilingual Sentence Transformer feature extraction technique using
-    the 'sentence-transformers/stsb-xlm-r-multilingual' model.
+    the 'sentence-transformers/labse' model.
 
     This class inherits from the BaseFeatureExtraction class provided by the
     ASReview package and implements the transform method for encoding texts
@@ -27,10 +27,10 @@ class labse(BaseFeatureExtraction):
         """
 
         model = SentenceTransformer(
-            "sentence-transformers/labse"
+            "sentence-transformers/LaBSE"
         )
         # Wrap texts with tqdm for progress bar
         print(
-            "Encoding texts using the labse model, this may take a while..."
+            "Encoding texts using the LaBSE model, this may take a while..."
         )
         return model.encode(texts, show_progress_bar=True)
