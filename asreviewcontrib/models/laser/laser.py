@@ -46,7 +46,7 @@ class laser(BaseFeatureExtraction):
             return matrix
         else:
             embeddings = []
-            count = 0
+            count = 1
             for text in texts:
                 try:
                     lang = detect(text)[:2]

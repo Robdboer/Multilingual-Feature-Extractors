@@ -32,8 +32,10 @@ setup(
             "mpnet = asreviewcontrib.models.paraphrase_multilingual_mpnet_base_v2.paraphrase_multilingual_mpnet_base_v2:paraphrasemultilingualmpnetbasev2",
             "stsb = asreviewcontrib.models.stsb_xlm_r_multilingual.stsb_xlm_r_multilingual:stsbxlmrmultilingual",
             "labse = asreviewcontrib.models.labse.labse:labse",
-            "muse = asreviewcontrib.models.muse.muse:muse",
             "laser = asreviewcontrib.models.laser.laser:laser",
+            "mbert = asreviewcontrib.models.mbert.mbert:mbert",
+            "mlongt5 = asreviewcontrib.models.mlongt5.mlongt5:mlongt5",
+            "readfm = asreviewcontrib.models.readfm.readfm:readfm",
 
         ],
         'asreview.models.balance': [
