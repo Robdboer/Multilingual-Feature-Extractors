@@ -13,9 +13,11 @@ The following feature extractors are currently implemented:
 
 - sentence-transformers/labse [Source](https://huggingface.co/sentence-transformers/labse)
 
-- muse
+- transformers/bert-base-multilingual-cased [Source](https://huggingface.co/bert-base-multilingual-cased)
 
-- Laser
+- agemagician/mlong-t5-tglobal-base [Source](https://huggingface.co/agemagician/mlong-t5-tglobal-base)
+
+- Laser [Source](https://pypi.org/project/laserembeddings/)
 
 and more are in the pipeline.
 
@@ -49,19 +51,23 @@ Choose an Extractor Model out of the following list:
 
 - minilm (sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2)
 
-- distiluse (distiluse-base-multilingual-cased-v2)
+- muse (distiluse-base-multilingual-cased-v2)
 
 - mpnet (paraphrase-multilingual-mpnet-base-v2)
 
 - stsb (stsb-xlm-r-multilingual)
 
-- labse (LaBse)
+- labse (labse)
 
-- muse
+- mbert (bert-base-multilingual-cased)
 
-- laser
+- mlongt5 (mlong-t5-tglobal-base)
 
-> Please note that, as with all sentence transformers, these models produce negative vector values. Consequently, they are not compatible with Naive Bayes classifiers, which require non-negative feature values.
+- laser (laserembeddings)
+
+- readfm (Used to read already created feature matrices)
+
+> Please note that, as with all (sentence) transformers, these models produce negative vector values. Consequently, they are not compatible with Naive Bayes classifiers, which require non-negative feature values.
 
 
 ## License

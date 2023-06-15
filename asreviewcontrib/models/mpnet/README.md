@@ -3,7 +3,7 @@
 This extension to ASReview implements a multilingual feature extractor algorithm, allowing for the analysis of records in multiple languages.
 The following feature extractor is implemented:
 
-- sentence-transformers/paraphrase-multilingual-mpnet-base-v2 [Source](sentence-transformers/paraphrase-multilingual-mpnet-base-v2)
+- sentence-transformers/paraphrase-multilingual-mpnet-base-v2 [Source](https://huggingface.co/sentence-transformers/paraphrase-multilingual-mpnet-base-v2)
 
 ## Getting started
 

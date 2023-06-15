@@ -1,16 +1,16 @@
-# ASReview stsb-xlm-r-multilingual feature extractor
+# ASReview bert-base-multilingual-cased feature extractor
 
 This extension to ASReview implements a multilingual feature extractor algorithm, allowing for the analysis of records in multiple languages.
 The following feature extractor is implemented:
 
-- sentence-transformers/stsb-xlm-r-multilingual [Source](sentence-transformers/stsb-xlm-r-multilingual)
+- transformers/bert-base-multilingual-cased [Source](https://huggingface.co/bert-base-multilingual-cased)
 
 ## Getting started
 
-This model depends on Sentence-Transformers. Install it with:
+This model depends on Transformers. Install it with:
 
 ```bash
-pip install sentence-transformers
+pip install transformers
 ```
 
 Install the multilingual feature extractors with:
@@ -23,13 +23,13 @@ pip install git+https://github.com/Robdboer/multilingual-feature-extractors.git
 ## Usage
 
 The feature extractor are defined in
-[`asreviewcontrib/models/stsb_xlm_r_multilingual`](asreviewcontrib/models/stsb_xlm_r_multilingual) and can be used in a simulation.
+[`asreviewcontrib/models/bert-base-multilingual-cased`](asreviewcontrib/models/bert-base-multilingual-cased) and can be used in a simulation.
 
 ```bash
-asreview simulate benchmark:van_de_Schoot_2017 -e stsb -m svm
+asreview simulate benchmark:van_de_Schoot_2017 -e mbert -m svm
 ```
 
-> Please note that, as with all sentence transformers, this model produces negative vector values. Consequently, it is not compatible with Naive Bayes classifiers, which require non-negative feature values.
+> Please note that, as with all transformers, this model produces negative vector values. Consequently, it is not compatible with Naive Bayes classifiers, which require non-negative feature values.
 
 
 ## License

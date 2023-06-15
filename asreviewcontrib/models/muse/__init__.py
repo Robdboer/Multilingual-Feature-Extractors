@@ -1,2 +1,2 @@
-from asreviewcontrib.models.distiluse_base_multilingual_cased_v2.distiluse_base_multilingual_cased_v2 import distilusebasemultilingualcasedv2
+from asreviewcontrib.models.muse.muse import muse
 

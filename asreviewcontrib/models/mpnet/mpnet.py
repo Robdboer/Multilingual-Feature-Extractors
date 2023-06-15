@@ -2,18 +2,18 @@ from sentence_transformers import SentenceTransformer
 from asreview.models.feature_extraction.base import BaseFeatureExtraction
 
 
-class stsbxlmrmultilingual(BaseFeatureExtraction):
+class mpnet(BaseFeatureExtraction):
     """
     Multilingual Sentence Transformer feature extraction technique using
-    the 'sentence-transformers/stsb-xlm-r-multilingual' model.
+    the 'sentence-transformers/paraphrase-multilingual-mpnet-base-v2' model.
 
     This class inherits from the BaseFeatureExtraction class provided by the
     ASReview package and implements the transform method for encoding texts
     using the multilingual SentenceTransformer model.
     """
 
-    name = "stsb"
-    label = "stsb-xlm-r-multilingual"
+    name = "mpnet"
+    label = "mpnet"
 
     def transform(self, texts):
         """
@@ -27,10 +27,10 @@ class stsbxlmrmultilingual(BaseFeatureExtraction):
         """
 
         model = SentenceTransformer(
-            "sentence-transformers/stsb-xlm-r-multilingual"
+            "sentence-transformers/paraphrase-multilingual-mpnet-base-v2"
         )
         # Wrap texts with tqdm for progress bar
         print(
-            "Encoding texts using the stsb-xlm-r-multilingual model, this may take a while..."
+            "Encoding texts using the paraphrase-multilingual-mpnet-base-v2 model, this may take a while..."
         )
         return model.encode(texts, show_progress_bar=True)

@@ -2,7 +2,7 @@ from sentence_transformers import SentenceTransformer
 from asreview.models.feature_extraction.base import BaseFeatureExtraction
 
 
-class distilusebasemultilingualcasedv2(BaseFeatureExtraction):
+class muse(BaseFeatureExtraction):
     """
     Multilingual Sentence Transformer feature extraction technique using
     the 'sentence-transformers/distiluse-base-multilingual-cased-v2' model.
@@ -12,8 +12,8 @@ class distilusebasemultilingualcasedv2(BaseFeatureExtraction):
     using the multilingual SentenceTransformer model.
     """
 
-    name = "distiluse"
-    label = "distiluse-base-multilingual-cased-v2"
+    name = "muse"
+    label = "muse"
 
     def transform(self, texts):
         """
@@ -31,6 +31,6 @@ class distilusebasemultilingualcasedv2(BaseFeatureExtraction):
         )
         # Wrap texts with tqdm for progress bar
         print(
-            "Encoding texts using the distiluse-base-multilingual-cased-v2 model, this may take a while..."
+            "Encoding texts using the distiluse-base-multilingual-cased-v2 (mUse) model, this may take a while..."
         )
         return model.encode(texts, show_progress_bar=True)
