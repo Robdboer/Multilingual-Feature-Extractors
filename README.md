@@ -25,10 +25,16 @@ and more are in the pipeline.
 
 ## Getting started
 
-This model depends on Sentence-Transformers. Install it with:
+These models depend on Sentence-Transformers, Transformers and Laserembeddings. Install them with:
 
 ```bash
 pip install sentence-transformers
+```
+```bash
+pip install transformers
+```
+```bash
+pip install laserembeddings
 ```
 
 Install the multilingual feature extractors with:
