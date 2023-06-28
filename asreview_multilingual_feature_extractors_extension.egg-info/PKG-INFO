@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: asreview-multilingual-feature-extractors-extension
+Version: 1.0
+Summary: Multilingual feature extractors extension
+Home-page: https://github.com/robdboer/multilingual-sentence-transformers
+Author: Rob den Boer
+Author-email: robbiedboer99@gmail.com
+Project-URL: Bug Reports, https://github.com/asreview/asreview/issues
+Project-URL: Source, https://github.com/robdboer/multilingual-sentence-transformers/
+Keywords: systematic review
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: ~=3.6
+License-File: LICENSE

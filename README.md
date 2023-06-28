@@ -25,7 +25,7 @@ and more are in the pipeline.
 
 ## Getting started
 
-These models depend on Sentence-Transformers, Transformers and Laserembeddings. Install them with:
+Some of these models depend on Sentence-Transformers, Transformers, Laserembeddings, torch and/or langdetect. Install them with:
 
 ```bash
 pip install sentence-transformers
@@ -35,6 +35,12 @@ pip install transformers
 ```
 ```bash
 pip install laserembeddings
+```
+```bash
+pip install torch
+```
+```bash
+pip install langdetect
 ```
 
 Install the multilingual feature extractors with:
